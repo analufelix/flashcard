@@ -12,15 +12,37 @@ criaCartao(
 
 criaCartao(
     'Filme',
-    'Nos filmes transformes qual é o nome da faccção de robos vilões?',
-    'Decepticons'
+    'Quem é o estilista em Os Incríveis?',
+    'Edna Moda'
 )
 
 criaCartao(
     'Filme',
     'Panter Negra se passa em qual país fictício',
     'Wakanda'
-
-
-
 )
+
+criaCartao(
+    'Filme',
+    'Qual é o nome do persgonagem verde que odeia o Natal?',
+    'Grinch'
+)
+
+criaCartao(
+    'Filme',
+    'No filme O Rei Leão, qual é o nome do pai de Simba?',
+    'Mufasa'
+)
+
+criaCartao(
+    'Filme',
+    'Qual é o nome do reino em que Elsa e Anna vivem em Frozen?',
+    'Arendelle'
+)
+
+criaCartao(
+    'Filme',
+    'No filme Ratattouille,qual o nome do rato cozinheiro?',
+    'Remy'
+)
+

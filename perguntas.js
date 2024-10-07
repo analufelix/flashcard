@@ -1,6 +1,6 @@
 criaCartao(
     'Filme',
-    'Qual foio primeiro filme animado de longa-metetragem já lançado?',
+    'Qual foi o primeiro filme animado de longa-metragem já lançado?',
     'Branca de Neve e o Sete Anoẽs'
 )
 
@@ -18,13 +18,13 @@ criaCartao(
 
 criaCartao(
     'Filme',
-    'Panter Negra se passa em qual país fictício',
+    'Pantera Negra se passa em qual país fictício',
     'Wakanda'
 )
 
 criaCartao(
     'Filme',
-    'Qual é o nome do persgonagem verde que odeia o Natal?',
+    'Qual é o nome do personagem verde que odeia o Natal?',
     'Grinch'
 )
 

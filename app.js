@@ -1,29 +1,40 @@
-function criaCartao(categoria, pergunta, resposta) {
-    let container = document.getElementById('container')
-    let cartao = document.createElement('article')
-    cartao.className = 'cartao'
+document.addEventListener("DOMContentLoaded", () => {
+    const flashcardContainer = document.getElementById("flashcard-container");
 
-    cartao.innerHTML = 
-    <div class="cartao_conteudo">
-        <h3>${categoria}</h3>
-        <div class="cartao_conteudo_pergunta">
-            <p>${pergunta}</p>
-            </div>
-            <div class="cartao_conteudo_resposta">
-                <p>${resposta}</p>
-            </div>
-            </div>
+    perguntas.forEach((item) => {
+        const flashcard = document.createElement("div");
+        flashcard.classList.add("flashcard");
 
+        const flashcardInner = document.createElement("div");
+        flashcardInner.classList.add("flashcard-inner");
 
-let respostaEstaVisivel = false
+        const flashcardFront = document.createElement("div");
+        flashcardFront.classList.add("flashcard-front");
+        flashcardFront.innerText = item.pergunta;
 
-function viraCartao() {
-    respostaEstaVisivel =!respostaEstaVisivel
-    cartao.classList. toggle('active', respostaEstaVisivel)
+        const flashcardBack = document.createElement("div");
+        flashcardBack.classList.add("flashcard-back");
+        flashcardBack.innerText = item.resposta;
+
+        flashcardInner.appendChild(flashcardFront);
+        flashcardInner.appendChild(flashcardBack);
+        flashcard.appendChild(flashcardInner);
+        flashcardContainer.appendChild(flashcard);
+
+        flashcard.addEventListener("click", () => {
+            flashcardInner.classList.toggle("is-flipped");
+        });
+    });
+});
+
+function enviarFeedback() {
+    alert("Envie seu feedback e sugestões para: contato@flashcardsfilmesclassicos.com");
 }
-cartao.addEventListener('click', viraCartao)
 
+function conhecaEquipe() {
+    alert("Conheça nossa equipe! Somos apaixonados por cinema e adoramos criar experiências interativas para os fãs de filmes clássicos.");
+}
 
-container.appendChild(cartao)
-
+function maisQuizes() {
+    alert("Em breve, teremos mais opções de quizes para você testar seu conhecimento em cinema e muito mais!");
 }
